@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Comment</title>
+  </head>
+  <body>
+    <div class="container center__display">
+      <div class="top">
+        <div class="video__container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/fJzxTYZLsy4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <form>
+            <div class="heart__icon center__display">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="form__info center__display">
+              <input
+                type="text"
+                name="user"
+                id="user"
+                placeholder="Your user name"
+              />
+              <input
+                type="text"
+                name="comment"
+                id="comment"
+                placeholder="Add Your short comment here"
+              />
+              <button class="submit__btn" type="submit">Submit</button>
+            </div>
+          </form>
+          <div class="likes__count">
+            <i class="far fa-heart"></i>
+            <small class="count">0</small>
+          </div>
+        </div>
+      </div>
+      <div class="comments__container center__display">
+        <!-- <div class="comments__card"></div> -->
+      </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
