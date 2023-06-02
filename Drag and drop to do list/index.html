@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and drop & Todo list & Cookie banner & Scroll button & Responsice menu & Dropdown menu</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.8.4/Sortable.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sortable/0.8.0/js/sortable.min.js" integrity="sha512-DEcSaL0BWApJ//v7ZfqAI04nvK+NQcUVwrrx/l1x7OJgU0Cwbq7e459NBMzLPrm8eLPzAwBtiJJS4AvLZDZ8xA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">My brand</div>
+      <div class="links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Location</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <div class="select">
+          <span class="selected">Figma</span>
+          <div class="caret"></div>
+        </div>
+        <ul class="menu">
+          <li>Framer</li>
+          <li>Sketch</li>
+          <li class="active">Figma</li>
+          <li>Adobe XD</li>
+        </ul>
+      </div>
+      <button class="btn" hidden><i class="fas fa-bars"> </i></button>
+    </div>
+    <div class="container">
+      <form>
+        <input type="text" class="todo" autofocus placeholder="todo">
+        <button class="todo__btn">Add todo</button>
+      </form>
+      <div class="wrapper"></div>
+    </div>
+    <div id="cookiePopup" class="show">
+      <img src="./image/image-cookie.png" alt="" />
+      <p>
+        The cookie text shouldn't also be confused with a Cookie Policy text or
+        Cookie Policy message, which are detailed policy statements about the
+        strategy of a company regarding the personal data management and privacy
+        of its users. A <a href="#">Cookie Policy</a> text is much broader than the cookie text,
+        present in the pop-up.
+      </p>
+      <button class="accept-btn">Accept</button>
+    </div>
+    <div class="scroll__btn">🔝</div>
+
+    <div class="container-two">
+      <div class="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+        soluta possimus! Porro, sapiente! Unde dignissimos tenetur aperiam dolor
+        labore nisi soluta, modi, quasi perferendis voluptate odit. Minus rem
+        praesentium voluptate. Mollitia at doloremque ipsam ratione repudiandae,
+        laudantium cupiditate commodi quasi eveniet quo impedit quisquam id
+        obcaecati. Porro, sed libero. Id hic est earum vero voluptatibus? Iste,
+        assumenda! Fugit, harum error? Quaerat voluptate eius natus iusto beatae
+        neque cupiditate, in reiciendis debitis corrupti illum nisi voluptates
+        et error id porro aspernatur facere sint vel non exercitationem aliquam
+        quibusdam sequi soluta. Debitis. Architecto officia, laborum repudiandae
+        veritatis sed, omnis blanditiis nemo facilis aspernatur, aliquid error
+        at amet quae molestiae ipsum dolorum magni. Impedit perferendis
+        laboriosam magnam culpa beatae, mollitia sapiente tenetur rerum? In
+        error et at voluptate dolorum animi labore earum minus veritatis ratione
+        rem, laboriosam temporibus quae natus, illo dolor facere. Aperiam nobis
+        dicta quas hic atque exercitationem est laborum repudiandae. Illum velit
+        autem quia. Corrupti laboriosam, rem numquam inventore cum blanditiis
+        accusantium eos neque, obcaecati qui quaerat tempore perspiciatis
+        quisquam, est repellat dolor officia totam ipsum. Laboriosam dolorum
+        quisquam porro. Mollitia nam corrupti vero ut, laudantium nemo provident
+        aliquam eius maxime illo minus tempore voluptate in odit perspiciatis.
+        Nihil vitae, ullam voluptates esse quasi maxime tempore temporibus
+        laborum nobis pariatur? Hic, consequatur eaque. Rem repudiandae,
+        voluptas officia facere aperiam eligendi voluptatem accusantium, numquam
+        a quos optio! Impedit alias molestias quia praesentium eveniet. Maxime
+        obcaecati molestias similique, harum qui repellat suscipit! Soluta eum
+        natus officia laudantium architecto quod dolores ut. Vitae quo,
+        explicabo, voluptates officiis facilis tempora accusantium error dolorum
+        consequuntur quaerat soluta ducimus ipsum? Quis aliquam minima vero non
+        aliquid? Ex quod eum sequi porro debitis aut perspiciatis eligendi,
+        quidem commodi obcaecati, nihil at! Temporibus, eaque aperiam velit
+        officia officiis reprehenderit? Nam magnam at optio autem! Quaerat
+        aperiam id odit! Nulla maiores mollitia ratione! Sint porro nulla
+        dignissimos, alias fugit commodi inventore non vel totam quas soluta,
+        expedita odit. Natus placeat aliquam temporibus nobis eveniet beatae
+        blanditiis quo dolore quidem. Pariatur animi illum fugiat laudantium
+        neque ab illo esse a numquam repellat dolorem aperiam debitis vitae quos
+        quam quo eum sunt quae sint doloribus, minima odio? Ex porro nisi
+        quidem. Eveniet aperiam non, nobis facere nihil illo quia modi, placeat
+        dolores nemo nisi numquam architecto reprehenderit sapiente rerum iste
+        deleniti perferendis repudiandae sint! Doloribus cupiditate ex
+        consequatur officia repellat ratione. Voluptatum, ad, velit autem nisi
+        quos sapiente unde est quam doloribus eveniet suscipit asperiores
+        dolorem consectetur ullam laboriosam laborum eaque temporibus, commodi
+        aut nesciunt dolores culpa nostrum esse? Fuga, corrupti? Nesciunt
+        repellat mollitia doloribus unde qui provident exercitationem saepe ut
+        error rerum totam animi ducimus dolor sed corrupti modi assumenda id
+        quisquam at omnis, atque quidem in minus? Perspiciatis, temporibus?
+        Assumenda odit maxime earum aspernatur quia sequi repellendus voluptates
+        rem accusamus ab exercitationem, blanditiis incidunt dolor odio ad fuga,
+        nobis at molestias eaque nesciunt ullam id dignissimos illum. Deserunt,
+        officia? Debitis distinctio provident voluptas error, velit cupiditate
+        saepe ducimus nobis nisi. Laudantium a molestias tempora, exercitationem
+        quibusdam officiis. Amet a, cupiditate at nam dignissimos iure excepturi
+        doloremque vitae voluptates consequatur. Molestias cupiditate nihil
+        voluptates ad velit! Minima neque error provident numquam impedit
+        expedita minus exercitationem odit quod, totam ullam. Autem consequatur
+        dolores vel voluptate velit temporibus omnis tempore sequi officiis. In
+        delectus amet nisi sunt ipsa, odio obcaecati vero debitis iusto hic,
+        labore quis assumenda. Ducimus nam quia necessitatibus quo blanditiis
+        aspernatur reprehenderit itaque mollitia eos. Repellat odit quis minima?
+        Sed dicta, accusamus facilis iste cupiditate dolorum dolore a! Rem nobis
+        eos asperiores at hic amet, iste quam tenetur, aperiam debitis dolorem
+        totam cum maxime praesentium commodi fugit ducimus inventore. Nihil esse
+        sapiente et architecto doloribus excepturi aliquid unde! Nam iusto
+        voluptatibus aspernatur exercitationem quia voluptas reiciendis amet
+        adipisci, animi doloribus officia sunt, laborum fuga, omnis aperiam
+        magnam obcaecati ducimus? Facere, iusto doloribus cumque eveniet
+        obcaecati voluptates, in tempora beatae corrupti accusamus perspiciatis
+        et rerum quisquam. Ullam asperiores nobis vel reprehenderit dolorum
+        saepe harum sunt, voluptatem doloribus veritatis. Sapiente, aut! Commodi
+        qui quaerat facere soluta necessitatibus vero quis temporibus
+        consequatur ea eum assumenda exercitationem quibusdam, numquam veniam
+        saepe recusandae natus aspernatur praesentium esse fuga architecto hic.
+        Magni explicabo qui perferendis. Aspernatur temporibus officiis
+        inventore consequuntur recusandae deleniti ad beatae asperiores iusto
+        saepe culpa quo molestiae eveniet aperiam optio, placeat illo tempore
+        quam eius! Accusantium dicta optio omnis, cupiditate culpa dignissimos.
+        Veritatis, modi hic iure, quasi pariatur dolorem autem aperiam
+        repudiandae inventore odio fugit, laborum ipsum neque corporis placeat?
+        Pariatur, iure accusantium officiis dolorum reiciendis iusto adipisci
+        magni. Illum, culpa reprehenderit? Laboriosam earum, saepe voluptatibus
+        dolore illo incidunt optio voluptates quidem rem nobis aliquam vel quasi
+        officia sit id perspiciatis vitae alias reiciendis consequatur odio
+        molestiae minus amet? Ab, quos laboriosam! Vel repudiandae assumenda
+        tenetur incidunt eligendi mollitia nam, sint esse. Vero sed porro at
+        quidem placeat maxime repellat voluptate. Cum quas esse sed fugit nam
+        veritatis repudiandae omnis molestiae voluptas. Eligendi suscipit veniam
+        aperiam vero debitis aliquam, molestias cupiditate rem? Rem,
+        necessitatibus sapiente blanditiis pariatur quo neque obcaecati animi
+        non ullam eaque sit? Eos iure quo, maiores repellat unde illo?
+        Doloremque sapiente illum non dignissimos ea earum praesentium, unde nam
+        veritatis illo, itaque maxime iure repellat quas corrupti
+        exercitationem, sit aspernatur molestias commodi voluptate? Dolor
+        voluptatibus voluptatem explicabo blanditiis totam. Laudantium illum
+        exercitationem sunt cupiditate, debitis at atque quam ipsum distinctio
+        explicabo nostrum laborum dolores neque voluptates dolorum, officia
+        recusandae, harum ratione magnam! Laboriosam sequi earum quaerat
+        accusamus asperiores nulla.
+      </div>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
+</html>
