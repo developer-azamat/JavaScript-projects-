@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+/* ui input */
+.input-container {
+  width: 220px;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  top: calc(50% + 5px);
+  transform: translateY(calc(-50% - 5px));
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  transition: 0.2s linear;
+  border: 2.5px solid black;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.input:focus {
+  outline: none;
+  border: 0.5px solid black;
+  box-shadow: -5px -5px 0px black;
+}
+
+.input-container:hover > .icon {
+  animation: anim 1s linear infinite;
+}
+
+@keyframes anim {
+  0%,
+  100% {
+    transform: translateY(calc(-50% - 5px)) scale(1);
+  }
+
+  50% {
+    transform: translateY(calc(-50% - 5px)) scale(1.1);
+  }
+}
+/* ui input */
+
+.card {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+  height: 70%;
+  overflow-y: scroll;
+}
+.card::-webkit-scrollbar{
+    width: 10px;
+}
+.card::-webkit-scrollbar-thumb{
+    background-color: #4ec3fd;
+}
+.list {
+    width: 90%;
+    color: #fff;
+    background-color: #4ec3fd;
+    margin: 0 auto;
+    text-align: left;
+    padding: 5px;
+    margin: 10px auto;
+}
+.list::first-letter{
+    text-transform: uppercase;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: transparent;
+  z-index: 99;
+}
+.navbar img {
+  width: 60px;
+  border-radius: 50%; 
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.links li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  transition: all 0.3s;
+  background-color: blueviolet;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.links li a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+#main {
+  background-image: url(../images/image0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
