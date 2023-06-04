@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Typing game || JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- link> css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- icon -->
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/3131/3131666.png"
+    />
+  </head>
+  <body>
+    <div
+      class="bg-gradient-to-r from-fuchsia-700 to-blue-500 w-[100%] h-[100vh] py-20 blur-sm"
+      style="
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 50%,
+          rgb(21, 22, 27) 51%
+        );
+      "
+      id="container"
+    >
+      <div
+        class="box bg-gradient-to-r from-fuchsia-600 to-blue-500 w-[80vw] h-[80vh] mx-auto shadow-lg shadow-black sm:flex justify-between px-5 sm:items-start py-5 text-white text-center relative"
+        style="
+          background: url(https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__480.jpg)
+            no-repeat;
+          background-size: cover;
+        "
+      >
+        <div class="mb-10 z-50 w-[30%] text-start">
+          <h2 class="text-2xl font-semibold font-serif w-[100%]">
+            Azamatjon <br />
+            Azimov
+          </h2>
+        </div>
+        <div
+          class="flex flex-col items-center sm:gap-20 gap-10 sm:w-[30%] justify-center"
+        >
+          <select
+            name=""
+            id="select"
+            class="px-2 py-1 rounded-md font-semibold text-sky-900 border-sky-900 border hover:opacity-70 cursor-pointer"
+          >
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+          </select>
+          <h2 id="text" class="text-4xl font-semibold select-none">
+            Loading...
+          </h2>
+          <input
+            type="text"
+            class="w-[300px] shadow-xl shadow-black px-2 py-1 text-black caret-red-600 outline-none rounded-md placeholder:capitalize placeholder:text-cyan-700 text-xl"
+            placeholder="enter text"
+            id="input"
+            autofocus
+          />
+          <h2 class="text-4xl font-semibold text-white">
+            time : <span id="timeText">10</span>
+          </h2>
+        </div>
+        <div class="sm:w-[30%] sm:text-end mt-10 sm:mt-0">
+          <h2 class="text-2xl font-semibold capitalize">
+            score : <span id="scoreText">0</span>
+          </h2>
+          <h2 class="text-2xl font-semibold">
+            Highscore : <span id="highScore">0</span>
+          </h2>
+        </div>
+        <div
+          class="absolute hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-7 px-10 flex-col gap-7 rounded-xl top-5 left-[50%] translate-x-[-50%]"
+          id="overGame"
+          style="
+            background: url(https://e1.pxfuel.com/desktop-wallpaper/54/590/desktop-wallpaper-aesthetic-galaxy-1000%C3%971400-aesthetic-galaxy-cover-thumbnail.jpg)
+              no-repeat;
+            background-size: cover;
+          "
+        >
+          <p
+            class="bg-transparent border text-4xl rounded-l g p-2 uppercase shadow-lg shadow-white mb-2"
+          >
+            game over
+          </p>
+          <p
+            class="bg-transparent border text-4xl rounded-lg p-2 capitalize shadow-lg shadow-white mb-2"
+            id="resultGame"
+          >
+          sizning natijangiz
+        </p>
+          <p
+            class="bg-transparent border text-4xl rounded-lg p-2 capitalize shadow-lg shadow-white mb-2 hidden"
+            id="newScore"
+          >
+            New high score : <span id="highScoreX"></span>
+          </p>
+          <button
+            class="text-3xl border py-1 px-4 rounded-xl bg-black hover:opacity-50 transition-all uppercase font-serif"
+            id="again"
+          >
+            <a href="">try again</a>
+          </button>
+        </div>
+        <img
+          src="./img/highScoregif.png"
+          alt=""
+          class="absolute w-[200px] h-[200px] top-20 right-0 object-cover hidden"
+        />
+      </div>
+    </div>
+    <div class="loader">
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
+</html>
