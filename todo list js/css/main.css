@@ -1,0 +1,352 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.load {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: url(../image/binary-code-background-digital-abstract-technology-cyber-122478205.jpg);
+  background-size: cover;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  /* background: #fff; */
+  border-radius: 50%;
+  position: relative;
+  /* animation: loader .5s infinite alternate; */
+}
+
+.container {
+  padding: 10px 100px;
+  background: url(../image/51363.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: none;
+}
+
+.container.click {
+  display: flex;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 400px;
+  height: 100vh;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h1 {
+  font-size: 38px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: lavender;
+  letter-spacing: 4px;
+  user-select: none;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 10px;
+  background: rgb(2, 87, 87);
+  border: none;
+  outline: none;
+  transition: all 0.7s ease-in-out;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.btn:hover,
+.active {
+  background: blueviolet;
+  transform: scale(1.1);
+  text-align: end;
+}
+
+.btn:active {
+  cursor: progress;
+}
+
+.links:hover > :not(:hover) {
+  opacity: 0.2;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  border: 5px solid blueviolet;
+  box-shadow: 0 0 10px 1px white;
+  padding: 10px 20px;
+  border-radius: 6px 6px 6px 6px;
+  overflow-y: scroll;
+  margin: 0 auto;
+  transform: translate(700px) !important;
+}
+
+.box.active {
+  transform: translate(0px) !important;
+}
+
+.title {
+  text-align: center;
+  background: rgb(63, 177, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 177, 251, 1) 34%,
+    rgba(144, 115, 252, 1) 78%,
+    rgba(204, 70, 252, 1) 100%
+  );
+  color: white;
+  margin-bottom: 2px;
+}
+
+.nameTask {
+  text-align: center;
+  margin: 10px 0;
+  color: blue;
+}
+.todoForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todoForm input {
+  width: 90%;
+  height: 30px;
+  font-size: 18px;
+  padding: 0 5px;
+  caret-color: blueviolet;
+}
+
+.todoForm button {
+  padding: 3px 30px;
+  text-transform: capitalize;
+  border: 2px solid blue;
+  color: blue;
+  font-size: 18px;
+  border-radius: 6px;
+  background: white;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.todoForm button:hover {
+  box-shadow: 0px 29px 0px 20px inset blue;
+  color: white;
+}
+
+#todo {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.list {
+  width: 100%;
+  position: relative;
+  padding: 0 5px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  border-bottom: 1px solid black;
+  text-align: start;
+}
+
+.list.active {
+  text-decoration: line-through;
+  background: rgb(214, 221, 225);
+  color: indigo;
+}
+
+.list.active .check {
+  color: white;
+}
+
+.buttons {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+.check {
+  color: greenyellow;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.remove {
+  color: red;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 3px 5px;
+}
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+.login {
+  width: 100%;
+  height: 100vh;
+  background: url(../image/binary-code-background-digital-abstract-technology-cyber-122478205.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  width: 70%;
+  height: 80vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px 0 20px 0;
+  padding: 0 50px;
+  box-shadow: 0 0 15px 2px #f1f1f1;
+}
+
+.content h1 {
+  color: rgb(23, 6, 212);
+}
+
+.content button {
+  color: rgb(23, 6, 212);
+  padding: 10px 30px;
+  border-radius: 10px 1px 1px 1px;
+  border: none;
+  font-size: large;
+  transition: all 0.5s ease-in-out;
+}
+
+.content button:hover {
+  border: 2px solid black;
+}
+.signing {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 120%;
+  z-index: -1;
+}
+
+.sign-in,
+.sign-up {
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  background: rgb(247, 248, 247);
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.sign-in {
+  left: 40px;
+  display: none;
+}
+.sign-in.iteme {
+  opacity: 1;
+  z-index: 9;
+}
+
+.sign-up {
+  right: 50px;
+}
+
+.sign-up.item {
+  right: 275px;
+}
+
+.to-sign {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 150px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.to-sign:nth-child(2) {
+  gap: 20px;
+  padding-top: 50px;
+}
+
+.to-sign input {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  border: darkblue 2px double;
+  padding: 0 4px;
+  caret-color: red;
+}
+
+.to-sign label {
+  font-size: 22px;
+  display: block;
+}
+
+.to-sign button {
+  background: #fff;
+  color: black;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.to-sign button:hover {
+  box-shadow: 0 0 9px 2px black;
+}
