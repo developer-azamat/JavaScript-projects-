@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Number Facts</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="./icon/calendar.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+</head>
+<body>
+    <div class="navbar" style="opacity: 1;">
+            <li><a href="index.html">Date facts</a></li>
+            <li><a href="mathfacts.html" class="active">Math facts</a></li>
+            <li><a href="randomfacts.html">Random facts</a></li>
+            <li><a href="yearfacts.html">Year facts</a></li>
+    </div>
+    <div class="navbar-second">
+            <li><a href="index.html">Date facts</a></li>
+            <li><a href="mathfacts.html" class="active">Math facts</a></li>
+            <li><a href="randomfacts.html">Random facts</a></li>
+            <li><a href="yearfacts.html">Year facts</a></li>
+    </div>
+    <button type="button" class="menu">Menu</button>
+    <div class="container">
+        <div class="mathFacts">
+            <div class="text-body">
+                <p>In this page you can get facts related to math. You can write any number you want. Let's try it now.</p>
+            </div>
+            <div class="math-mini">
+                <div class="mini-box">
+                    <input type="number" placeholder="Number.." id="num_math" required value>
+                    <button class="btn-date" id="btn-math">Send</button>
+                </div>
+                <p id="addme-math" class="adme"></p>
+            </div>
+        </div>
+    </div>
+    <!-- javaScript link -->
+    <script src='./js/math.js'></script>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Number Facts</title>
+    <link rel="icon" href="./icon/calendar.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+</head>
+<body>
+    <div class="navbar">
+            <li><a href="index.html" class="active">Date facts</a></li>
+            <li><a href="mathfacts.html">Math facts</a></li>
+            <li><a href="randomfacts.html">Random facts</a></li>
+            <li><a href="yearfacts.html">Year facts</a></li>
+    </div>
+    <div class="navbar-second">
+        <li><a href="index.html" class="active">Date facts</a></li>
+            <li><a href="mathfacts.html">Math facts</a></li>
+            <li><a href="randomfacts.html">Random facts</a></li>
+            <li><a href="yearfacts.html">Year facts</a></li>
+    </div>
+    <button type="button" class="menu">Menu</button>
+    <div class="container">
+        <div class="dateFacts">
+            <div class="text-body">
+                <p>In this page you can get facts related to dates. You are only allowed to write a month and a day in numbers: month(1-12) days(1-31). Let's find out what happened on your date of birth.</p>
+            </div>
+            <div class="date-mini">
+                <div class="mini-box">
+                    <input type="number" placeholder="Month.." id="dateMonth" required value autofocus> 
+                    <input type="number" placeholder="Day.." id="dayofDate" required value>
+                    <button class="btn-date" type="button" id="btn-date">Send</button>
+                </div>
+                <p class="adme"></p>
+            </div>
+        </div>
+        <div class="box">
+                <h2 class="box-title">Number Facts</h2>
+                <p class="box-text">Hello! This is a small number facts web app,
+                    where you can get date, math, random or year facts.
+                    Click the button to continue.</p>
+                <button class="btn-box">Continue</button>
+        </div>
+    </div>
+    <!-- javaScript link -->
+    <script src='./js/main.js'></script>
+</body>
+</html>

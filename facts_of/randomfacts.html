@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Number Facts</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="./icon/calendar.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+</head>
+<body>
+    <div class="navbar" style="opacity: 1;">
+            <li><a href="index.html">Date facts</a></li>
+            <li><a href="mathfacts.html">Math facts</a></li>
+            <li><a href="randomfacts.html" class="active">Random facts</a></li>
+            <li><a href="yearfacts.html">Year facts</a></li>
+    </div>
+    <div class="navbar-second">
+        <li><a href="index.html">Date facts</a></li>
+            <li><a href="mathfacts.html">Math facts</a></li>
+            <li><a href="randomfacts.html" class="active">Random facts</a></li>
+            <li><a href="yearfacts.html">Year facts</a></li>
+    </div>
+    <button type="button" class="menu">Menu</button>
+    <div class="container">
+        <div class="randomFacts">
+            <div class="text-body">
+                <p>Here you can find random facts related to math or year.</p>
+            </div>
+            <div class="date-mini">
+                <div class="mini-box">
+                    <p>Choose the type of fact</p>
+                    <select id="select">
+                        <option value="Math">Math</option>
+                        <option value="Year">Year</option>
+                    </select>
+                    <button class="btn-date" id="random-btn">Send</button>
+                </div>
+                <p class="adme" id="adme-random"></p>
+            </div>
+        </div>
+    </div>
+    <!-- javaScript link -->
+    <script src='./js/random.js'></script>
+    
+</body>
+</html>
